@@ -1,7 +1,7 @@
-<button id="increment" (click)="increment()">Increment</button>
+<button id="increment" (click)="increment()">Increment</button> <!--Kullanıcıdan (click) metoduyla src/app/my-counter/my-counter.component.ts dosyasındaki increment() metodu tetiklenir -->
 
-<div>Current Count: {{ count$ | async }}</div>
+<div>Current Count: {{ count$ | async }}</div>  <!-- Burada count observable dinlenir(subscribe) Async ile-->
 
-<button id="decrement" (click)="decrement()">Decrement</button>
+<button id="decrement" (click)="decrement()">Decrement</button> <!--Kullanıcıdan (click) metoduyla src/app/my-counter/my-counter.component.ts dosyasındaki decrement() metodu tetiklenir -->
 
-<button id="reset" (click)="reset()">Reset Counter</button>
+<button id="reset" (click)="reset()">Reset Counter</button> <!--Kullanıcıdan (click) metoduyla src/app/my-counter/my-counter.component.ts dosyasındaki reset() metodu tetiklenir -->

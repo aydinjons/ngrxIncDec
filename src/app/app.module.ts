@@ -13,10 +13,10 @@ import { MyCounterComponent } from './my-counter/my-counter.component';
   declarations: [AppComponent,MyCounterComponent],
   imports: [
     BrowserModule,
-    StoreModule.forRoot({ count: counterReducer }),
+    StoreModule.forRoot({ count: counterReducer }), // Store burada oluşturuluyor
     // Instrumentation must be imported after importing StoreModule (config is optional)
-    StoreDevtoolsModule.instrument({
-      maxAge: 25
+    StoreDevtoolsModule.instrument({  // Redux devtools çalıştırılması için  gerekli
+      maxAge: 25 // History 25 adet ile sınırlandırıldı  son 25 state tutuluyor
     }),
   
   ],
